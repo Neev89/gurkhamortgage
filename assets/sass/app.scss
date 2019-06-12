@@ -1,0 +1,26 @@
+
+#section-banner {
+  height: calc(100vh - 88px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.herobanner__img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 11;
+  transform: translateY(-50%);
+}
+
+footer {
+  background: #7a285d;
+}
+
+.copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
+  margin: 0 -1rem;
+}
