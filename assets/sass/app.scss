@@ -24,3 +24,36 @@ footer {
   padding-top: 10px;
   margin: 0 -1rem;
 }
+
+.section-awards {
+  position: relative;
+
+  &:before {
+    content: '';
+    background-image: linear-gradient(150deg, rgb(119, 0, 76) 0%, rgb(177, 96, 148) 100%);
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:after {
+    top: 50%;
+    content: '';
+    position: absolute;
+    background-image: url(/dist/images/icons/ic_award.svg);
+    background-repeat: no-repeat;
+    background-position: left 30px center;
+    background-size: 200px;
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+}
